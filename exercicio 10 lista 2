@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int codigo_modelo,qtd_perifericos,cont=0;
+    float preco_modelo,preco_periferico;
+    cout<<"Codigo Modelo: ";
+    cin>>codigo_modelo;
+    cout<<"Preco Modelo: ";
+    cin>>preco_modelo;
+    cout<<"Quantidade de perifericos: ";
+    cin>>qtd_perifericos;
+    
+    while(codigo_modelo != 0)
+    {
+        if(qtd_perifericos==0)
+        {
+            cont++;
+        }
+        else
+        {
+            cont=cont;
+        }
+        
+        
+        for(int i=1;i<=qtd_perifericos;i++)
+            {
+                cout<<"Preco periferico"<<" "<<i<<" ";
+                cin>> preco_periferico;
+            }
+        cout<<"Codigo Modelo: ";
+        cin>>codigo_modelo;
+        if(codigo_modelo==0)
+        {
+            break;
+        }
+        cout<<"Preco Modelo: ";
+        cin>>preco_modelo;
+        cout<<"Quantidade de perifericos: ";
+        cin>>qtd_perifericos;
+    
+    
+    }
+    cout<<"Numero de vendas sem perifericos"<<" "<<cont;
+}
